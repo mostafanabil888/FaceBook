@@ -8,6 +8,7 @@ export default function CreateRoom() {
             .then((response) => response.json())
             .then((actualData) => setdata(actualData));
     }, []);
+    console.log(data);
   return (
     <section className={styles.CreateRoom}>
         <div className="row align-items-center justify-content-between">
@@ -19,7 +20,7 @@ export default function CreateRoom() {
                 {
                     data.map((user) => {
                         return(
-                                <img className='border rounded-5' height="40" src={user.src} width="40" alt={user.title} />
+                                <img key={user.id} className='border rounded-5' height="40" src={user.src} width="40" alt={user.title} />
                         )
                     })
                 }
