@@ -1,0 +1,52 @@
+.OtherLinks {
+    width: 100%;
+    height: calc(100vh - 80px);
+    padding: 1rem 0;
+    overflow-y: hidden;
+
+    &:hover {
+        overflow-y: scroll;
+    }
+
+    .heading {
+        padding: 1rem;
+
+        h3 {
+            font-weight: bold;
+        }
+
+        &:hover {
+            background-color: #898f9c;
+        }
+    }
+
+    ol {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            padding: 1rem 0 1rem 2rem;
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            &:hover {
+                background-color: #898f9c;
+            }
+
+            span {
+                text-transform: capitalize;
+                font-size: large;
+            }
+            svg {
+                font-size: 1.5rem;
+                margin-right: 1rem;
+                color: black;
+                &:hover {
+                    background-color: #898f9c;
+                }
+            }
+        }
+
+    }
+}

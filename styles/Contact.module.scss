@@ -1,0 +1,39 @@
+.Contact{
+    margin: 1rem 0;
+    height: calc(100vh - 80px);
+    padding: 0.5rem;
+    overflow: hidden;
+    &:hover{
+        overflow-y: scroll;
+    }
+    .heading{
+        border-top: 1px solid rgb(206, 208, 212);
+        display: flex;
+        padding: 1rem 0;
+        align-items: center;
+        justify-content: center;
+        input {
+            border-radius: 50px;
+            padding: 1rem;
+            border: none;
+            border: 1px solid rgb(206, 208, 212);
+            background: #f0f2f5;
+            font-size: 0.97rem;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    h2,h5{
+        color: rgb(145, 146, 148);
+    }
+        .ContactBox{
+            display: flex;
+            margin: 1.5rem 0;
+            h6{
+                color: #1877f2;
+                font-size: 0.85rem;
+                font-weight: bold;
+            }
+        }
+}
